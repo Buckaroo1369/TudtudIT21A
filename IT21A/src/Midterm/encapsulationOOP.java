@@ -15,10 +15,9 @@ public class encapsulationOOP {
     }
     
     public static void main(String[] args) {
-       encapsulationOOP obj = new encapsulationOOP();
-       obj.sitNam(67);
+        for(i)
        
-        System.out.println("Da nambir is: " + obj.eks);
+;;
     }
     
 }
