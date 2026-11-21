@@ -22,5 +22,11 @@ public class PolymorphismDemo {
 
     public static void main(String[] args) {
 
+        DeliveryVehicle vehicle1 = new Motorcycle();
+        DeliveryVehicle vehicle2 = new DeliveryVan();
+
+        vehicle1.deliver();
+        vehicle2.deliver();
+
     }
 }
