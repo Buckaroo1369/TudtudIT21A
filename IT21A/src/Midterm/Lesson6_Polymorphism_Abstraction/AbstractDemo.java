@@ -42,5 +42,16 @@ public class AbstractionDemo {
 
     public static void main(String[] args) {
 
+        ElectricFan fan = new ElectricFan("Hanabishi");
+        AirConditioner aircon = new AirConditioner("LG");
+
+        fan.showBrand();
+        fan.operate();
+
+        System.out.println();
+
+        aircon.showBrand();
+        aircon.operate();
+
     }
 }
