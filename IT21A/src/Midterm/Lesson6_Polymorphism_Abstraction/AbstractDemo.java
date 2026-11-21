@@ -5,6 +5,12 @@ abstract class Appliance {
     Appliance(String brand) {
         this.brand = brand;
     }
+
+    abstract void operate();
+
+    void showBrand() {
+        System.out.println("Appliance Brand: " + brand);
+    }
 }
 
 
