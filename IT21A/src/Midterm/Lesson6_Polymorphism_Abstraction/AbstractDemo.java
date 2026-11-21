@@ -13,6 +13,18 @@ abstract class Appliance {
     }
 }
 
+class ElectricFan extends Appliance {
+
+    ElectricFan(String brand) {
+        super(brand);
+    }
+
+    @Override
+    void operate() {
+        System.out.println("The electric fan is rotating.");
+    }
+}
+
 
 public class AbstractionDemo {
 
