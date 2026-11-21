@@ -25,6 +25,18 @@ class ElectricFan extends Appliance {
     }
 }
 
+class AirConditioner extends Appliance {
+
+    AirConditioner(String brand) {
+        super(brand);
+    }
+
+    @Override
+    void operate() {
+        System.out.println("The air conditioner is cooling the room.");
+    }
+}
+
 
 public class AbstractionDemo {
 
