@@ -8,6 +8,10 @@ abstract class RecoveredFragment {
 
     abstract void describeRecovery();
 
+    void displayRecord() {
+        System.out.println("Recovered Fragment: " + fragmentName);
+        System.out.println("Department Record: Filed and documented.");
+    }
 }
 
 public class AbstractionDemo {
