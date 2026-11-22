@@ -6,7 +6,7 @@ abstract class RecoveredFragment {
         this.fragmentName = fragmentName;
     }
 
-    
+    abstract void describeRecovery();
 
 }
 
