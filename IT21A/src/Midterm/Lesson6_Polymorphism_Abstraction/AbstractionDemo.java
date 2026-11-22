@@ -14,6 +14,18 @@ abstract class RecoveredFragment {
     }
 }
 
+class MemoryFragment extends RecoveredFragment {
+
+    MemoryFragment(String fragmentName) {
+        super(fragmentName);
+    }
+
+    @Override
+    void describeRecovery() {
+        System.out.println("Recovery Details: A memory recovered from  the past");
+    }
+}
+
 public class AbstractionDemo {
 
     public static void main(String[] args) {
