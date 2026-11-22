@@ -5,6 +5,14 @@ class LostFragment {
     }
 }
 
+class ForgottenMemory extends LostFragment {
+
+    @Override 
+    public void recover() {
+        System.out.println("Memory Recovered: A moment that was almost forgotten...");
+    }
+}
+
 public class PolymorphismDemo {
     
     public static void main(String[] args) {
