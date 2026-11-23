@@ -1,49 +1,55 @@
-Lesson 6: Polymorphism and Abstraction
+# Lesson 6: Polymorphism and Abstraction
+
+## The Lost and Found Department of the Mind
+
+*A department responsible for recovering things that were never physically lost.*
 
 This activity contains two Java programs demonstrating polymorphism and abstraction using a fictional department that recovers fragments of the mind, such as forgotten memories, unanswered questions, and dreams.
 
 I chose this concept because not everything we lose is something we can physically hold or find. Some things remain in our thoughts, and not everything we remember or recover comes back in the same way.
 
+---
 
+## Part 1 – Polymorphism
 
-Part 1 – Polymorphism
+### `PolymorphismDemo.java`
 
-PolymorphismDemo.java - The first program simulates the recovery of different fragments of the mind. It has two types of fragments: a forgotten memory and an unanswered question. Both can be recovered, but they produce different results.
+The first program simulates the recovery of different fragments of the mind. It has two types of fragments: a forgotten memory and an unanswered question. Both can be recovered, but they produce different results.
 
-The program uses "LostFragment" as the parent class, while "ForgottenMemory" and "UnansweredQuestion" are its child classes. Both child classes override the "recover()" method to provide their own behavior.
+The program uses `LostFragment` as the parent class, while `ForgottenMemory` and `UnansweredQuestion` are its child classes. Both child classes override the `recover()` method to provide their own behavior.
 
+### How polymorphism works in my program
 
-How polymorphism works in my program
-
-I used "LostFragment" as the reference type for objects belonging to different child classes. Even though both objects are declared using the same parent class, calling their "recover()" method produces different results.
+I used `LostFragment` as the reference type for objects belonging to different child classes. Even though both objects are declared using the same parent class, calling their `recover()` method produces different results.
 
 This allows the program to handle different types of fragments using the same method without needing to create an entirely different method for each one.
 
-Parent class: "LostFragment"
-Child classes: "ForgottenMemory" and "UnansweredQuestion"
-Overridden method: "recover()"
+- **Parent class:** `LostFragment`
+- **Child classes:** `ForgottenMemory` and `UnansweredQuestion`
+- **Overridden method:** `recover()`
 
+---
 
+## Part 2 – Abstraction
 
-Part 2 – Abstraction
+### `AbstractionDemo.java`
 
-AbstractionDemo.java - The second program represents the department's process of recording recovered fragments. Each fragment has a name and recovery details, but the actual description of how it was recovered depends on its type.
+The second program represents the department's process of recording recovered fragments. Each fragment has a name and recovery details, but the actual description of how it was recovered depends on its type.
 
-I used an abstract class called "RecoveredFragment" to provide a common structure for the fragments. It contains an abstract method called "describeRecovery()" and a regular method called "displayRecord()".
+I used an abstract class called `RecoveredFragment` to provide a common structure for the fragments. It contains an abstract method called `describeRecovery()` and a regular method called `displayRecord()`.
 
-The child classes "MemoryFragment" and "DreamFragment" implement "describeRecovery()" differently, while both can use the inherited "displayRecord()" method.
+The child classes `MemoryFragment` and `DreamFragment` implement `describeRecovery()` differently, while both can use the inherited `displayRecord()` method.
 
+### How abstraction works in my program
 
-How abstraction works in my program
-
-The abstract class provides a structure that the child classes must follow without defining every detail of their behavior. The "describeRecovery()" method is left for the child classes to implement, while "displayRecord()" already has its own implementation.
+The abstract class provides a structure that the child classes must follow without defining every detail of their behavior. The `describeRecovery()` method is left for the child classes to implement, while `displayRecord()` already has its own implementation.
 
 This allows the program to share common features without requiring every class to repeat the same code.
 
-Abstract class: "RecoveredFragment"
-Abstract method: "describeRecovery()"
-Concrete method: "displayRecord()"
-Child classes: "MemoryFragment" and "DreamFragment"
+- **Abstract class:** `RecoveredFragment`
+- **Abstract method:** `describeRecovery()`
+- **Concrete method:** `displayRecord()`
+- **Child classes:** `MemoryFragment` and `DreamFragment`
 
 ---
 
